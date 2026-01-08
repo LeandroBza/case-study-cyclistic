@@ -21,3 +21,35 @@ Para atingir o objetivo da análise, as seguintes perguntas orientaram a explora
 3. Quais dias da semana apresentam maior uso para cada tipo de usuário?
 4. Quais horários do dia são mais utilizados por usuários casuais e por membros anuais?
 5. Quais estações de início são mais utilizadas por cada grupo de usuários?
+
+## 2. Dados
+
+### 2.1 Fonte dos Dados
+
+Os dados utilizados neste projeto são públicos e reais, disponibilizados pela Divvy Bikes, empresa responsável pelo sistema de bicicletas compartilhadas da cidade de Chicago (EUA). Os arquivos podem ser acessados por meio do repositório oficial de dados da Divvy, utilizado como base no capstone do Google Data Analytics Professional Certificate.
+
+Os dados não contêm informações pessoais identificáveis, estando em conformidade com as políticas de privacidade e uso de dados públicos.
+
+### 2.2 Período e Escopo
+
+A análise foi realizada com base nos dados referentes ao período de janeiro a dezembro de 2025, totalizando 12 meses completos de registros de viagens. Cada arquivo corresponde a um mês de operação do sistema de bicicletas compartilhadas.
+
+### 2.3 Estrutura dos Dados
+
+Abaixo estão as principais colunas utilizadas neste projeto, bem como seus respectivos tipos e descrições:
+
+| Coluna               | Tipo      | Descrição |
+|----------------------|-----------|-----------|
+| ride_id              | string    | Identificador único da viagem |
+| rideable_type        | string    | Tipo de bicicleta utilizada |
+| started_at           | datetime  | Data e hora de início da viagem |
+| ended_at             | datetime  | Data e hora de término da viagem |
+| start_station_name   | string    | Nome da estação de início |
+| start_station_id     | string    | Identificador da estação de início |
+| end_station_name     | string    | Nome da estação de término |
+| end_station_id       | string    | Identificador da estação de término |
+| start_lat            | decimal   | Latitude da estação de início |
+| start_lng            | decimal   | Longitude da estação de início |
+| end_lat              | decimal   | Latitude da estação de término |
+| end_lng              | decimal   | Longitude da estação de término |
+| member_casual        | string    | Tipo de usuário (casual ou membro) |

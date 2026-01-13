@@ -55,11 +55,12 @@ Abaixo estão as principais colunas utilizadas neste projeto, bem como seus resp
 | member_casual        | string    | Tipo de usuário (casual ou membro) |
 
 
+
 ## 3. Limpeza e Tratamento dos Dados
 
 Nesta etapa, foi realizada a validação e limpeza dos dados com o objetivo de garantir consistência e confiabilidade para as análises posteriores.
 
-### Verificação de valores nulos
+### 3.1 Verificação de valores nulos
 Foi verificado se existiam valores nulos nas principais colunas utilizadas para análise e visualização. As seguintes colunas apresentaram **0 valores nulos**:
 
 - start_station_name  
@@ -71,7 +72,7 @@ Foi verificado se existiam valores nulos nas principais colunas utilizadas para 
 
 Dessa forma, não foi necessária nenhuma ação corretiva relacionada a valores ausentes nessas colunas.
 
-### Verificação de duração inválida das viagens
+### 3.2 Verificação de duração inválida das viagens
 Também foram analisadas viagens com duração inválida, considerando os seguintes casos:
 - Viagens em que `ended_at` é menor que `started_at`
 - Viagens em que `ended_at` é igual a `started_at`

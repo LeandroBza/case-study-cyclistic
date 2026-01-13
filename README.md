@@ -53,3 +53,30 @@ Abaixo estão as principais colunas utilizadas neste projeto, bem como seus resp
 | end_lat              | decimal   | Latitude da estação de término |
 | end_lng              | decimal   | Longitude da estação de término |
 | member_casual        | string    | Tipo de usuário (casual ou membro) |
+
+
+## 3. Limpeza e Tratamento dos Dados
+
+Nesta etapa, foi realizada a validação e limpeza dos dados com o objetivo de garantir consistência e confiabilidade para as análises posteriores.
+
+### Verificação de valores nulos
+Foi verificado se existiam valores nulos nas principais colunas utilizadas para análise e visualização. As seguintes colunas apresentaram **0 valores nulos**:
+
+- start_station_name  
+- end_station_name  
+- start_lat  
+- start_lng  
+- end_lat  
+- end_lng  
+
+Dessa forma, não foi necessária nenhuma ação corretiva relacionada a valores ausentes nessas colunas.
+
+### Verificação de duração inválida das viagens
+Também foram analisadas viagens com duração inválida, considerando os seguintes casos:
+- Viagens em que `ended_at` é menor que `started_at`
+- Viagens em que `ended_at` é igual a `started_at`
+
+Foram identificados **836 registros** com duração inválida.  
+Esses registros foram removidos da base de dados, pois não representam viagens reais e poderiam distorcer os resultados da análise.
+
+Após a limpeza, o conjunto final de dados passou a conter **5.552.158 registros válidos**.

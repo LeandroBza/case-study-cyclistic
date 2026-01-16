@@ -118,8 +118,50 @@ GROUP BY member_casual;
 
 Resultados obtidos:
 
-Membros (member): 3.553.020 viagens
+- Membros (member): 3.553.020 viagens
 
-Usuários casuais (casual): 1.999.138 viagens
+- Usuários casuais (casual): 1.999.138 viagens
 
 Os resultados indicam que os membros anuais realizam um volume significativamente maior de viagens quando comparados aos usuários casuais, reforçando a importância desse grupo para a receita do negócio.
+
+### 4.2 Uso do serviço por dia da semana
+
+Nesta análise, foi avaliado o padrão de uso do serviço ao longo dos dias da semana, comparando o comportamento de usuários casuais e membros anuais.
+
+**Consulta SQL utilizada:**
+
+```sql
+SELECT
+    member_casual,
+    day_of_week,
+    COUNT(*) AS total_trips
+FROM trips
+GROUP BY member_casual, day_of_week
+ORDER BY day_of_week;
+```
+Resultados obtidos:
+
+| Tipo de usuário | Dia da semana | Total de viagens |
+|-----------------|---------------|------------------|
+| Member | Domingo (1) | 382.256 |
+| Casual | Domingo (1) | 331.721 |
+| Member | Segunda (2) | 502.703 |
+| Casual | Segunda (2) | 228.216 |
+| Member | Terça (3) | 563.000 |
+| Casual | Terça (3) | 225.549 |
+| Member | Quarta (4) | 550.100 |
+| Casual | Quarta (4) | 221.505 |
+| Member | Quinta (5) | 575.926 |
+| Casual | Quinta (5) | 257.987 |
+| Member | Sexta (6) | 528.911 |
+| Casual | Sexta (6) | 320.027 |
+| Member | Sábado (7) | 450.124 |
+| Casual | Sábado (7) | 414.133 |
+
+- Os membros anuais apresentam maior volume de viagens durante os dias úteis, com pico entre terça e quinta-feira.
+
+- Os usuários casuais concentram um volume maior de viagens nos finais de semana, especialmente no sábado (dia 7).
+
+- No domingo (dia 1), o volume de viagens entre membros e casuais é mais equilibrado quando comparado aos dias úteis.
+
+Esses resultados reforçam a diferença de comportamento entre os dois grupos: enquanto os membros utilizam o serviço de forma mais recorrente ao longo da semana, possivelmente para deslocamentos diários, os usuários casuais tendem a utilizar as bicicletas principalmente para lazer nos finais de semana.

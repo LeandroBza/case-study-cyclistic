@@ -97,3 +97,28 @@ As colunas derivadas criadas foram:
 - ride_hour: hora do dia em que a viagem foi iniciada (0 a 23).
 
 Essas colunas permitem analisar padrões de uso ao longo do tempo, identificar diferenças de comportamento entre os tipos de usuários e apoiar a criação de visualizações mais informativas na etapa de análise.
+
+## 4. Análise Exploratória dos Dados
+
+O objetivo desta etapa é identificar padrões de uso e diferenças de comportamento entre usuários casuais e membros anuais, utilizando as colunas derivadas criadas anteriormente.
+
+### 4.1 Distribuição geral de usuários (casual x member)
+
+Nesta análise inicial, foi avaliada a distribuição total de viagens entre usuários casuais e membros anuais, com o objetivo de entender a participação de cada grupo no uso do serviço Cyclistic.
+
+**Consulta SQL utilizada:**
+
+```sql
+SELECT
+    member_casual,
+    COUNT(*) AS total_trips
+FROM trips
+GROUP BY member_casual;```
+
+Resultados obtidos:
+
+Membros (member): 3.553.020 viagens
+
+Usuários casuais (casual): 1.999.138 viagens
+
+Os resultados indicam que os membros anuais realizam um volume significativamente maior de viagens quando comparados aos usuários casuais, reforçando a importância desse grupo para a receita do negócio.

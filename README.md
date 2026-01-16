@@ -113,7 +113,8 @@ SELECT
     member_casual,
     COUNT(*) AS total_trips
 FROM trips
-GROUP BY member_casual;```
+GROUP BY member_casual;
+```
 
 Resultados obtidos:
 

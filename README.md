@@ -81,3 +81,19 @@ Foram identificados **836 registros** com duração inválida.
 Esses registros foram removidos da base de dados, pois não representam viagens reais e poderiam distorcer os resultados da análise.
 
 Após a limpeza, o conjunto final de dados passou a conter **5.552.158 registros válidos**.
+
+### 3.3 Criação de colunas derivadas
+
+Após a limpeza e validação dos dados, foram criadas colunas adicionais com o objetivo de facilitar as análises exploratórias e comparativas entre usuários casuais e membros anuais.
+
+As colunas derivadas criadas foram:
+
+- ride_length: duração da viagem em minutos, calculada a partir da diferença entre os horários de início e término da viagem.
+
+- day_of_week: dia da semana em formato numérico (1 = Domingo, 7 = Sábado), extraído da data de início da viagem.
+
+- ride_month: mês da viagem (1 a 12), extraído da data de início.
+
+- ride_hour: hora do dia em que a viagem foi iniciada (0 a 23).
+
+Essas colunas permitem analisar padrões de uso ao longo do tempo, identificar diferenças de comportamento entre os tipos de usuários e apoiar a criação de visualizações mais informativas na etapa de análise.

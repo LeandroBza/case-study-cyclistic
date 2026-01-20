@@ -165,3 +165,25 @@ Resultados obtidos:
 - No domingo (dia 1), o volume de viagens entre membros e casuais é mais equilibrado quando comparado aos dias úteis.
 
 Esses resultados reforçam a diferença de comportamento entre os dois grupos: enquanto os membros utilizam o serviço de forma mais recorrente ao longo da semana, possivelmente para deslocamentos diários, os usuários casuais tendem a utilizar as bicicletas principalmente para lazer nos finais de semana.
+
+### 4.3 Duração média das viagens
+
+Nesta análise, foi comparada a duração média das viagens realizadas por usuários casuais e membros anuais, com o objetivo de identificar diferenças no padrão de uso do serviço.
+
+**Consulta SQL utilizada:**
+
+```sql
+SELECT
+    member_casual,
+    ROUND(AVG(ride_length), 2) AS avg_ride_length_minutes
+FROM trips
+GROUP BY member_casual;
+```
+
+Resultados obtidos:
+
+Tipo de usuário	Duração média (minutos)
+-Member	11,85
+-Casual	22,11
+
+Os resultados mostram que os usuários casuais realizam viagens significativamente mais longas do que os membros anuais. Esse comportamento indica que os usuários casuais tendem a utilizar o serviço para lazer ou passeios mais longos, enquanto os membros utilizam as bicicletas de forma mais objetiva, possivelmente para deslocamentos diários.

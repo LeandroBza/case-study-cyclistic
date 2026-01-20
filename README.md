@@ -182,7 +182,8 @@ GROUP BY member_casual;
 
 Resultados obtidos:
 
-Tipo de usuário	Duração média (minutos)
+Tipo de usuário	Duração média (minutos):
+
 -Member	11,85
 -Casual	22,11
 

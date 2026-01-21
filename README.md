@@ -182,9 +182,42 @@ GROUP BY member_casual;
 
 Resultados obtidos:
 
-Tipo de usuário	Duração média (minutos):
-
--Member	11,85
--Casual	22,11
+| Tipo de usuário | Duração média (minutos) |
+|-----------------|--------------------------|
+| Member | 11,85 |
+| Casual | 22,11 |
 
 Os resultados mostram que os usuários casuais realizam viagens significativamente mais longas do que os membros anuais. Esse comportamento indica que os usuários casuais tendem a utilizar o serviço para lazer ou passeios mais longos, enquanto os membros utilizam as bicicletas de forma mais objetiva, possivelmente para deslocamentos diários.
+
+## 4.4 Uso do serviço por horário do dia
+
+Nesta análise, foi avaliada a distribuição de viagens ao longo das horas do dia, comparando o comportamento de usuários casuais e membros anuais.
+
+**Consulta SQL utilizada:**
+
+```sql
+SELECT
+    member_casual,
+    ride_hour,
+    COUNT(*) AS total_trips
+FROM trips
+GROUP BY member_casual, ride_hour
+ORDER BY ride_hour;
+```
+Resultados obtidos:
+
+| Tipo de usuário | Hora do dia | Total de viagens |
+|-----------------|-------------|------------------|
+| Member |	6–9	| Alto volume (pico às 8h) |
+| Member |	16–18 |	Maior pico diário (especialmente às 17h) |
+| Casual |	10–16 |	Maior concentração de viagens |
+| Casual | 17–18 |	Pico moderado |
+| Ambos |	0–5	| Baixo volume de viagens |
+
+Interpretação dos resultados:
+
+- Os membros anuais apresentam picos claros de uso nos horários de início da manhã (entre 6h e 9h) e no final da tarde (entre 16h e 18h), indicando forte relação com deslocamentos para trabalho ou estudo.
+
+- Já os usuários casuais concentram a maior parte das viagens entre o final da manhã e o período da tarde, com uso mais distribuído ao longo do dia, o que sugere um padrão de uso mais associado a lazer e atividades recreativas.
+
+- Esses padrões reforçam a diferença de comportamento entre os grupos, com membros utilizando o serviço de forma mais recorrente e previsível, enquanto os usuários casuais apresentam maior flexibilidade nos horários de uso.

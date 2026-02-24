@@ -60,17 +60,34 @@ Abaixo estão as principais colunas utilizadas neste projeto, bem como seus resp
 
 Nesta etapa, foi realizada a validação e limpeza dos dados com o objetivo de garantir consistência e confiabilidade para as análises posteriores.
 
-### 3.1 Verificação de valores nulos
-Foi verificado se existiam valores nulos nas principais colunas utilizadas para análise e visualização. As seguintes colunas apresentaram **0 valores nulos**:
+### 3.1 Verificação de valores nulos e strings vazias
+Inicialmente, foi realizada a verificação de valores nulos (NULL) nas principais colunas utilizadas para análise e visualização. As seguintes colunas apresentaram 0 valores nulos:
 
-- start_station_name  
-- end_station_name  
-- start_lat  
-- start_lng  
-- end_lat  
-- end_lng  
+-start_station_name
 
-Dessa forma, não foi necessária nenhuma ação corretiva relacionada a valores ausentes nessas colunas.
+-end_station_name
+
+-start_lat
+
+-start_lng
+
+-end_lat
+
+-end_lng
+
+Entretanto, após análise adicional utilizando TRIM() no SQL, foi identificado que 1.184.061 registros continham valores vazios (empty string) nas colunas:
+
+-start_station_name
+
+-start_station_id
+
+-end_station_name
+
+-end_station_id
+
+Esses valores não eram NULL, mas strings vazias ("").
+
+Para garantir consistência analítica e evitar categorias em branco nos dashboards, esses registros foram padronizados como "Unknown" por meio de atualização via SQL
 
 ### 3.2 Verificação de duração inválida das viagens
 Também foram analisadas viagens com duração inválida, considerando os seguintes casos:

@@ -20,7 +20,6 @@ Para atingir o objetivo da análise, as seguintes perguntas orientaram a explora
 2. Como a duração média das viagens difere entre usuários casuais e membros anuais?
 3. Quais dias da semana apresentam maior uso para cada tipo de usuário?
 4. Quais horários do dia são mais utilizados por usuários casuais e por membros anuais?
-5. Quais estações de início são mais utilizadas por cada grupo de usuários?
 
 ## 2. Dados
 

@@ -240,9 +240,9 @@ Interpretação dos resultados:
 
 - Esses padrões reforçam a diferença de comportamento entre os grupos, com membros utilizando o serviço de forma mais recorrente e previsível, enquanto os usuários casuais apresentam maior flexibilidade nos horários de uso.
 
-##5. Dashboard e Visualizações
+## 5. Dashboard e Visualizações
 
-###5.1 Visão geral do dashboard
+### 5.1 Visão geral do dashboard
 
 ![Dashboard Completo](images/dashboard/001_dashboard.png)
 
@@ -261,7 +261,7 @@ O dashboard foi desenvolvido no Power BI com o objetivo de analisar o comportame
 
 -Duração Média (min): média da duração das viagens em minutos.
 
-###5.3 Padrão de Uso por Dia da Semana
+### 5.3 Padrão de Uso por Dia da Semana
 
 ![Uso por Semana](images/dashboard/003_dia_da_semana.png)
 
@@ -269,7 +269,7 @@ Observa-se que usuários membros apresentam maior volume de uso durante os dias 
 
 Já usuários casuais apresentam maior concentração de uso nos finais de semana, principalmente no sábado, sugerindo utilização do serviço para atividades de lazer
 
-###5.4 Padrão de Uso por Hora do Dia
+### 5.4 Padrão de Uso por Hora do Dia
 
 ![Uso por Horas do dia](images/dashboard/004_hora_do_dia.png)
 
@@ -279,7 +279,7 @@ Usuários casuais apresentam um comportamento mais distribuído ao longo do dia,
 
 Esse padrão reforça a hipótese de que membros utilizam o serviço principalmente para deslocamentos regulares, enquanto usuários casuais utilizam o sistema de forma mais recreativa.
 
-###5.5 Tendência Mensal de Uso
+### 5.5 Tendência Mensal de Uso
 
 ![Uso Mensal](images/dashboard/005_uso_mensal.png)
 

@@ -249,7 +249,7 @@ Interpretação dos resultados:
 O dashboard foi desenvolvido no Power BI com o objetivo de analisar o comportamento de uso entre usuários membros e casuais. A visualização está dividida em três blocos: indicadores gerais, padrões temporais semanais e diários, e tendência mensal de uso.
 
 
-###5.2 Indicadores Principais (KPIs)
+### 5.2 Indicadores Principais (KPIs)
 
 ![KPIs](images/dashboard/002_kpis.png)
 

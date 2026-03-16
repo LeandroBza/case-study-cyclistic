@@ -267,7 +267,7 @@ O dashboard foi desenvolvido no Power BI com o objetivo de analisar o comportame
 
 Observa-se que usuários membros apresentam maior volume de uso durante os dias úteis, especialmente entre terça e quinta-feira, indicando forte relação com deslocamentos recorrentes.
 
-Já usuários casuais apresentam maior concentração de uso nos finais de semana, principalmente no sábado, sugerindo utilização do serviço para atividades de lazer
+Já usuários casuais apresentam maior concentração de uso nos finais de semana, principalmente no sábado, sugerindo utilização do serviço para atividades de lazer.
 
 ### 5.4 Padrão de Uso por Hora do Dia
 
@@ -288,3 +288,13 @@ Observa-se crescimento progressivo no volume de viagens ao longo dos primeiros m
 Posteriormente ocorre uma redução gradual no final do ano, indicando influência de fatores sazonais no comportamento de uso do serviço.
 
 Usuários casuais apresentam maior variação ao longo do ano, enquanto membros mantêm um padrão de utilização mais estável.
+
+## 6. Conclusão
+
+A análise evidencia diferenças claras de comportamento entre membros e usuários casuais no sistema Cyclistic.
+
+Usuários membros representam a maior parte das viagens, correspondendo a 64% do total, e apresentam padrões consistentes de utilização durante dias úteis e horários típicos de deslocamento, indicando uso recorrente para atividades do cotidiano.
+
+Por outro lado, usuários casuais representam 36% das viagens, com maior concentração de uso nos finais de semana e horários mais flexíveis, sugerindo um comportamento associado a lazer e atividades recreativas.
+
+Esses padrões indicam oportunidades estratégicas para a equipe de marketing desenvolver campanhas direcionadas para usuários casuais, especialmente em períodos de maior uso recreativo, incentivando a migração para planos de assinatura anual.

@@ -239,3 +239,52 @@ Interpretação dos resultados:
 - Já os usuários casuais concentram a maior parte das viagens entre o final da manhã e o período da tarde, com uso mais distribuído ao longo do dia, o que sugere um padrão de uso mais associado a lazer e atividades recreativas.
 
 - Esses padrões reforçam a diferença de comportamento entre os grupos, com membros utilizando o serviço de forma mais recorrente e previsível, enquanto os usuários casuais apresentam maior flexibilidade nos horários de uso.
+
+##5. Dashboard e Visualizações
+
+###5.1 Visão geral do dashboard
+
+![Dashboard Completo](images/dashboard/001_dashboard.png)
+
+O dashboard foi desenvolvido no Power BI com o objetivo de analisar o comportamento de uso entre usuários membros e casuais. A visualização está dividida em três blocos: indicadores gerais, padrões temporais semanais e diários, e tendência mensal de uso.
+
+
+###5.2 Indicadores Principais (KPIs)
+
+![KPIs](images/dashboard/002_kpis.png)
+
+-Total de Viagens: volume total de corridas registradas em 2025.
+
+-%membros: participação proporcional de usuários com assinatura anual.
+
+-%casuais: participação proporcional de usuários sem assinatura.
+
+-Duração Média (min): média da duração das viagens em minutos.
+
+###5.3 Padrão de Uso por Dia da Semana
+
+![Uso por Semana](images/dashboard/003_dia_da_semana.png)
+
+Observa-se que usuários membros apresentam maior volume de uso durante os dias úteis, especialmente entre terça e quinta-feira, indicando forte relação com deslocamentos recorrentes.
+
+Já usuários casuais apresentam maior concentração de uso nos finais de semana, principalmente no sábado, sugerindo utilização do serviço para atividades de lazer
+
+###5.4 Padrão de Uso por Hora do Dia
+
+![Uso por Horas do dia](images/dashboard/004_hora_do_dia.png)
+
+Os dados mostram picos claros de utilização entre usuários membros às 8h e 17h–18h, horários típicos de deslocamento para trabalho ou estudo.
+
+Usuários casuais apresentam um comportamento mais distribuído ao longo do dia, com maior concentração de viagens entre o final da manhã e o período da tarde.
+
+Esse padrão reforça a hipótese de que membros utilizam o serviço principalmente para deslocamentos regulares, enquanto usuários casuais utilizam o sistema de forma mais recreativa.
+
+###5.5 Tendência Mensal de Uso
+
+![Uso Mensal](images/dashboard/005_uso_mensal.png)
+
+Observa-se crescimento progressivo no volume de viagens ao longo dos primeiros meses do ano, atingindo níveis mais elevados durante os meses mais quentes.
+
+Posteriormente ocorre uma redução gradual no final do ano, indicando influência de fatores sazonais no comportamento de uso do serviço.
+
+Usuários casuais apresentam maior variação ao longo do ano, enquanto membros mantêm um padrão de utilização mais estável.
